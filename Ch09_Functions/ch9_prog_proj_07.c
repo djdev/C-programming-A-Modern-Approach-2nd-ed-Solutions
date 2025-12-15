@@ -34,13 +34,11 @@ int power(int x, int n)
 {
 	int p;
 
-	if(n == 0)
+	if (n == 0)
 		return 1;
-	else if(n % 2 == 0)
-	{
-		p = power(x, n / 2);
-		return p * p;
-	}
-	else
-		return x * power(x, n - 1);
+	else if (n % 2) // n is odd
+		p = power(x * x, (n - 1) / 2) * x;
+	else // n is even
+		p = power(x * x, n / 2);
+	return p;
 }
