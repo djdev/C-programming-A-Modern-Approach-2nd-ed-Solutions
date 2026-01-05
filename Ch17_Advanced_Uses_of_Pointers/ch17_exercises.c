@@ -134,6 +134,8 @@ int main(void)
 //----------------------------------
 
 // Q6 + Test script
+// For more context, check this discussion on github (#4)
+// or use this link: https://github.com/mhamdyx/C-programming-A-Modern-Approach-2nd-ed-Solutions/issues/4
 /*
 #include <stdio.h>
 #include <stdlib.h>
